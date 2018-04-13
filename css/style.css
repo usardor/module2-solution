@@ -1,1 +1,120 @@
+/*****GENERAL code*****/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
 
+    body {
+        background-color:floralwhite;
+}
+
+    .container {
+        width: 100%;
+        margin-top: 50px;
+        position: relative;
+        margin-left: 1.66%;
+}
+
+    .container div {
+        border: 1px solid black;
+        position: relative;
+        background-color:darkslategrey;
+        border-radius: 5px;
+}
+
+    h1 {
+        text-align: center;
+        color: chartreuse;
+        background-color:deeppink;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family: sans-serif;
+}
+
+    .title {
+        float: right;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        color: white;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .appetizers {
+        background-color: coral;
+    }
+    
+    .salads {
+        background-color: chartreuse;
+    }
+    
+    .desserts {
+        background-color: darkorange;
+    }
+
+    div p {
+        float: left;
+        padding: 10px;
+        font-family: sans-serif;
+        color:cornsilk;
+    }
+
+
+/*****DESKTOP version*****/
+
+@media (min-width: 992px) {
+    
+    .container div {
+        float: left;
+        width: 30%;
+        margin-right: 1.66%;
+        margin-left: 1.66%;
+}
+    
+    div .column2 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+
+/*****TABLET version*****/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .column1, .column2 {
+        width: 40%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        float: left;
+        position: relative;
+    }
+    
+    .column3 {
+        width: 85%;
+        float: left;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        margin-top: 30px;
+    }
+    
+    .container {
+        margin-left: 5%;
+    }
+}
+
+
+/*****MOBILE version****/
+
+@media (max-width: 767px) {
+       
+    .container div {
+        float: left;
+        width: 90%;
+        margin-bottom: 15px;
+}
+    .container {
+        margin-left: 5%;
+    } 
+}
